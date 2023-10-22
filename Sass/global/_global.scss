@@ -1,0 +1,30 @@
+@use "../variables";
+@use "../global/mixins";
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: variables.$dark-blue;
+    font-size: variables.$font-size-base;
+
+    @include variables.media-breakpoint-up(md) {
+        font-size: 1.5rem;
+    }
+
+    .state1 {
+        @include mixins.absoluteCenter;
+    }
+
+    .state2 {
+        @include mixins.absoluteCenter;
+        display: none;
+    }
+
+    .attribution {
+        display: none;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}

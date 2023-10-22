@@ -1,0 +1,21 @@
+// PROJECT COLORS
+$white: #fff;
+
+// override
+$primary: hsl(25, 97%, 53%);
+$secondary: hsl(213, 19%, 18%);
+
+// custom variables 
+$light-gray: hsl(217, 12%, 63%);
+$medium-gray: hsl(216, 12%, 54%);
+$dark-blue: hsl(216, 12%, 8%);
+$bg-top-blue: hsl(217.5,19.18%,16.25%);
+$bg-bottom-blue: hsl(217.5,26%,11.55%);
+
+// PROJECT FONTS
+$font-family-sans-serif: "Overpass", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+$font-size-root: 62.5%;
+$font-size-base: 1.45rem;
+
+// IMPORT BOOTSTRAP
+@import "../node_modules/bootstrap/scss/bootstrap";

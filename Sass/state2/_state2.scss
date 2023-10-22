@@ -1,0 +1,27 @@
+@use "../variables";
+
+.box {
+
+    &__rating-message {
+        color: variables.$primary;
+        background-color: variables.$secondary;
+        padding: 0.9rem 1.3rem 0.6rem;
+    }
+
+    &__thanks-img {
+        @include variables.media-breakpoint-up(md) {
+            width: 165px;
+            height: 118px;
+            margin: 0.8rem 0 0;
+        }
+    }
+
+    &__paragraph {
+
+        &--state2 {
+            @include variables.media-breakpoint-up(md) {
+                padding: 0 0.5rem;
+            }
+        }
+    }
+}

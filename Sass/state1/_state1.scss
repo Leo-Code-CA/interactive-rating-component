@@ -1,0 +1,82 @@
+@use "../variables";
+@use "../global/mixins";
+
+.box {
+    width: 330px;
+    height: 360px;
+    background-image: linear-gradient(to bottom, variables.$bg-top-blue, variables.$bg-bottom-blue);
+    padding: 2.5rem 2.2rem 3rem;
+    border-radius: 2rem;
+    
+    @include variables.media-breakpoint-up(md) {
+        width: 415px;
+        height: 415px;
+        padding: 3rem 3.1rem 3.5rem;
+        border-radius: 3rem;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        @include variables.media-breakpoint-up(md) {
+            font-size: 2.8rem;
+        }
+    }
+
+    &__paragraph {
+        color: variables.$medium-gray;
+    }
+
+    &__rating-bg {
+        @include mixins.backgroundRound;
+        overflow: hidden;
+
+        .active {
+            background-color: variables.$light-gray;
+            color: variables.$white;
+        }
+
+        a {
+            color: variables.$medium-gray;
+
+
+            &:hover {
+                background-color: variables.$primary;
+                color: variables.$white;
+            }
+
+            &:active {
+                background-color: variables.$light-gray;
+                color: variables.$white;
+            }
+
+            span {
+                @include mixins.absoluteCenter;
+                padding-top: 0.4rem;
+            }
+        }
+    }
+
+    &__star {
+        @include mixins.backgroundRound;
+
+        img {
+            @include mixins.absoluteCenter;
+            @include variables.media-breakpoint-up(md) {
+                width: 1.7rem;
+                height: 1.7rem;
+            }
+        }
+    }
+
+    &__btn {
+        padding: 1.2rem 0 0.9rem;
+        letter-spacing: 0.2rem;
+        color: variables.$white;
+
+        &:hover {
+            background-color: variables.$white;
+            color: variables.$primary;
+            border-color: variables.$white;
+        }
+    }
+}
