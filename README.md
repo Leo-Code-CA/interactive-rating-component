@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]()
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/interactive-rating-component-challenge-solution-using-bootstrap-iQrvYZ6YFr)
 - Live Site URL: [Live site URL](https://leo-code-ca.github.io/interactive-rating-component/)
 
 ## My process
