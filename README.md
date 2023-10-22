@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL]()
-- Live Site URL: [Live site URL]()
+- Live Site URL: [Live site URL](https://leo-code-ca.github.io/interactive-rating-component/)
 
 ## My process
 
